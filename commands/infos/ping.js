@@ -12,7 +12,7 @@ module.exports = {
             color: 'RANDOM',
            
         
-            footer: { text: `"Ping for" + ${client.user.username}`,
+            footer: { text: `Ping for  ${client.user.username}`,
                       icon_url: client.user.displayAvatarURL(),
         },
             fields: [
