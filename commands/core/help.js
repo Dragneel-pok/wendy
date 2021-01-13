@@ -12,7 +12,9 @@ module.exports = {
             message.channel.send({
                 embed: {
                     color: '#29cddc',
-                    author: { name: `${client.user.username} 's help aka cmds` },
+                    author: { name: `🔖| ${client.user.username} 's help aka cmds`,
+                              icon_url:client.user.displayAvatarURL()
+                },
                     footer: { text: 'Feel free to join our support server |always welcomed - Dragneel' },
                     fields: [
                         { name: 'Bot', value: infos },
@@ -21,8 +23,7 @@ module.exports = {
                     ],
                     timestamp: new Date(),
                     thumbnail:{url:'https://cdn.discordapp.com/attachments/726134541638697042/798504934588153856/5ffd7f99a0259488765813.gif'},
-                    //description:` konichiwaa/hello/Namaste me , am **Wendy** , a discord music bot by **Dragneel#1255**, am pretty descent with support of Youtube and spotify
-                    //looking forward to grow with everyone cause i am short xD'`,
+                 
                      description: ` konichiwaa/hello/Namaste me , am **Wendy** , a discord music bot by **Dragneel#1255**, am pretty descent with support of Youtube and spotify
                      looking forward to grow with everyone cause i am short xD
                       **My**
@@ -38,20 +39,17 @@ module.exports = {
 
             message.channel.send({
                 embed: {
-                    color: 'ORANGE',
-                    author: { name: `${args[0]} command info` },
-                    footer: { text: `if u find any bugs or problem |report in our server w!support` },
-                   /* fields: [
-                        { name: 'Name', value: command.name },
-                        { name: 'Category', value: command.category },
-                        { name: 'Aliase(s)', value: command.aliases.length < 1 ? 'None' : command.aliases.join(', ')},
-                        { name: 'Utilisation', value: command.utilisation.replace('{prefix}', client.config.discord.prefix) },
-                    ],*/
+                    color: '#29cddc',
+                    author: { name: `${args[0]} command's info`,
+                              icon_url:client.user.displayAvatarURL()
+                },
+                    footer: { text:" if u find any bugs or problem |report in our server `w!support` "},
+                   
                     timestamp: new Date(),
-                    description: `**Name:** ${command.name}
-                                  **Category:**${command.category}
+                    description: `**Name:**      ${command.name}
+                                  **Category:**  ${command.category}
                                   **Aliase(s):** ${ command.aliases.length < 1 ? 'None' : command.aliases.join(', ')}
-                                  **Usage:**${command.utilisation.replace('{prefix}', client.config.discord.prefix)}
+                                  **Usage:**     ${command.utilisation.replace('{prefix}', client.config.discord.prefix)}
                     
                     
                     `,
