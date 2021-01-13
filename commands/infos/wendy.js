@@ -1,6 +1,6 @@
 module.exports = {
     name: 'wendy/invite',
-    aliases: [support],
+    aliases: ['support'],
     category: 'Infos',
     utilisation: '{prefix}wendy| {prefix}invite',
 
@@ -13,7 +13,7 @@ module.exports = {
                     icon_url:client.user.displayAvatarURL()
                 },
                 thumbnail:{url:''}
-                
+
 
 
 
