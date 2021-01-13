@@ -3,7 +3,7 @@ module.exports = (client, message, track) => {
     message.channel.send({
         embed: {
             color: '#29cddc',
-            author: { name: `Now playing |` + track.title,
+            author: { name: `Now playing :` + track.title,
                       icon_url: 'https://cdn.discordapp.com/attachments/726134541638697042/798842241145765958/Music.gif',
         },
             footer: { text: `Playing in  ${message.guild.name}`,
