@@ -9,7 +9,7 @@ module.exports = {
 
     discord: {
         token: 'TOKEN',
-        prefix: 'PREFIX',
+        prefix: 'w!',
         activity: 'songs of zephy',
     },
 
