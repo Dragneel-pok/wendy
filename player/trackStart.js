@@ -15,7 +15,7 @@ module.exports = (client, message, track) => {
                 { name: 'Requested by', value: track.requestedBy.username, inline: true },
                 { name: 'From playlist', value: track.fromPlaylist ? 'Yes' : 'No', inline: true },
                // { name: 'Link', value: [Link](trackURL), inline: true },
-             //   { name: 'Views', value: track.views, inline: true },
+               { name: 'Views', value: track.views, inline: true },
                 { name: 'Duration', value: track.duration, inline: true },
              //   { name: 'Filters activated', value: filters.length + '/' + client.filters.length, inline: true },
 
@@ -23,7 +23,7 @@ module.exports = (client, message, track) => {
                 { name: 'Repeat mode', value: client.player.getQueue(message).repeatMode ? 'Yes' : 'No', inline: true },
                // { name: 'Currently paused', value: client.player.getQueue(message).paused ? 'Yes' : 'No', inline: true },
 
-                { name: 'Progress bar', value: client.player.createProgressBar(message, { timecodes: true })}
+             //   { name: 'Progress bar', value: client.player.createProgressBar(message, { timecodes: true })}
             ],
             thumbnail: { url: track.thumbnail },
             timestamp: new Date(),
