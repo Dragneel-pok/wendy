@@ -21,11 +21,13 @@ module.exports = {
                     ],
                     timestamp: new Date(),
                     thumbnail:{url:'https://cdn.discordapp.com/attachments/726134541638697042/798504934588153856/5ffd7f99a0259488765813.gif'},
-                    description:` konichiwaa/hello/Namaste me , am **Wendy** , a discord music bot by **Dragneel#1255**, am pretty descent with support of Youtube and spotify
-                    looking forward to grow with everyone cause i am short xD'`,
-                     description: `'**My**'
-                      '**Home:**' [Home/support](https://discord.gg/7WNNNFaGJX)
-                     ' **Invite-Link:**'[Invite me](https://discord.com/oauth2/authorize?client_id=724135554966355968&permissions=0&scope=bot)
+                    //description:` konichiwaa/hello/Namaste me , am **Wendy** , a discord music bot by **Dragneel#1255**, am pretty descent with support of Youtube and spotify
+                    //looking forward to grow with everyone cause i am short xD'`,
+                     description: ` konichiwaa/hello/Namaste me , am **Wendy** , a discord music bot by **Dragneel#1255**, am pretty descent with support of Youtube and spotify
+                     looking forward to grow with everyone cause i am short xD
+                      **My**
+                      **Home:**  [Home/support](https://discord.gg/7WNNNFaGJX)
+                      **Invite-Link:** [Invite me](https://discord.com/oauth2/authorize?client_id=724135554966355968&permissions=0&scope=bot)
                      `,
                 },
             });
