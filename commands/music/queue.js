@@ -13,8 +13,33 @@ module.exports = {
 
         if (!client.player.getQueue(message)) return message.channel.send(`${client.emotes.error} - No songs currently playing !`);
 
-        message.channel.send(`**Server queue - ${message.guild.name} ${client.emotes.queue} ${client.player.getQueue(message).loopMode ? '(looped)' : ''}**\nCurrent : ${queue.playing.title} | ${queue.playing.author}\n\n` + (queue.tracks.map((track, i) => {
-            return `**#${i + 1}** - ${track.title} | ${track.author} (requested by : ${track.requestedBy.username})`
-        }).slice(0, 5).join('\n') + `\n\n${queue.tracks.length > 5 ? `And **${queue.tracks.length - 5}** other songs...` : `In the playlist **${queue.tracks.length}** song(s)...`}`));
+        message.channel.send({
+            embed: {
+              color:'#29cddc',
+              author:{
+                  text:`${message.guild.name} + 's Queue`,
+                  icon_url:'https://media.discordapp.net/attachments/726134541638697042/799260530296619028/1a392bd3bbb24b234a6c736894d8efbf.gif'
+              },
+              title:`Current : ${queue.playing.title} | [by ${track.requestedBy.toString()}]`,
+              description:  queue.tracks.map((track, i) => {
+                return `**#${i + 1}** - ${track.title} | ${track.author} (requested by : ${track.requestedBy.username})`
+                }).slice(0, 5).join('\n') + `\n\n${queue.tracks.length > 5 ? `And **${queue.tracks.length - 5}** other songs...`  :``}`,
+
+              field:[
+                  {name:'Loop-mode :',value: `${client.player.getQueue(message).loopMode ? '(looped)' : ''}`},
+                  {name:'Total in Queue',value:`${queue.tracks.length}`}
+
+              ]
+
+
+
+            }
+        })
     },
 };
+/*`**Server queue - ${message.guild.name} ${client.emotes.queue} ${client.player.getQueue(message).loopMode ? '(looped)' : ''}**\n
+
+Current : ${queue.playing.title} | Req by \`\n\n` + 
+(queue.tracks.map((track, i) => {
+return `**#${i + 1}** - ${track.title} | ${track.author} (requested by : ${track.requestedBy.username})`
+}).slice(0, 5).join('\n') + `\n\n${queue.tracks.length > 5 ? `And **${queue.tracks.length - 5}** other songs...` : `In the playlist **${queue.tracks.length}** song(s)...`}`));*/

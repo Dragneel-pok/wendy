@@ -19,7 +19,7 @@ module.exports = {
         message.channel.send({
             embed: {
                 color: '#29cddc',
-                author: { name:`Current Track:`+ track.title },
+                author: { name:`Current Track: `+ track.title },
                 footer:  { text: `${message.guild.name}`,
                 icon_url: message.guild.iconURL(),
             },

@@ -40,7 +40,7 @@ module.exports = {
             message.channel.send({
                 embed: {
                     color: '#29cddc',
-                    author: { name: `${args[0]} command's info`,
+                    author: { name: `Command: ${args[0]}'s  info`,
                               icon_url:client.user.displayAvatarURL()
                 },
                     footer: { text:" if u find any bugs or problem | report in our server `w!support` "},
