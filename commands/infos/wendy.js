@@ -9,7 +9,7 @@ var parseTime= function(millisesconds){
   hours%= 24;
   var written = false;
   return(
-      days? ((written = true),days +`days`): ``) +
+      (days? ((written = true),days +`days`): ``) +
       (written ? `, `: ``) +
       (hours?((written - true),hours + `hours`): ``)+
       (written ? `, `: ``) +
@@ -17,9 +17,8 @@ var parseTime= function(millisesconds){
       (written ? `, `: ``) +
       (seconds? ((written = true),seconds +`seconds`): ``) +
       (written ? `, `: ``) +
-     ( milliseconds? ((written = true),milliseconds +`milliseconds`): ``) +
       (milliseconds ? millisesconds + `milliseconds`: ``)
-
+  )
 };
 
 
