@@ -34,7 +34,7 @@ module.exports = {
                     { name: 'Duration', value: track.duration, inline: true },
                  //   { name: 'Filters activated', value: filters.length + '/' + client.filters.length, inline: true },
 
-                    { name: 'Volume', value: client.player.getQueue(message).volume, inline: true },
+                  //  { name: 'Volume', value: client.player.getQueue(message).volume, inline: true },
                    // { name: 'Repeat mode', value: client.player.getQueue(message).repeatMode ? 'Yes' : 'No', inline: true },
                    // { name: 'Currently paused', value: client.player.getQueue(message).paused ? 'Yes' : 'No', inline: true },
 

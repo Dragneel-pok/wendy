@@ -22,7 +22,7 @@ module.exports = {
                       //  { name: 'Filters', value: client.filters.map((x) => '`' + x + '`').join(', ') },
                     ],
                     timestamp: new Date(),
-                    thumbnail:{url:'https://cdn.discordapp.com/attachments/726134541638697042/798504934588153856/5ffd7f99a0259488765813.gif'},
+                    thumbnail:{url:'https://cdn.discordapp.com/attachments/735293660064776275/798941062148128818/wendy_song.gif'},
                  
                      description: ` konichiwaa/hello/Namaste me , am **Wendy** , a discord music bot by **Dragneel#1255**, am pretty descent with support of Youtube and spotify
                      looking forward to grow with everyone cause i am short xD
@@ -43,13 +43,13 @@ module.exports = {
                     author: { name: `${args[0]} command's info`,
                               icon_url:client.user.displayAvatarURL()
                 },
-                    footer: { text:" if u find any bugs or problem |report in our server `w!support` "},
+                    footer: { text:" if u find any bugs or problem | report in our server `w!support` "},
                    
                     timestamp: new Date(),
-                    description: `**Name:**      ${command.name}
-                                  **Category:**  ${command.category}
-                                  **Aliase(s):** ${ command.aliases.length < 1 ? 'None' : command.aliases.join(', ')}
-                                  **Usage:**     ${command.utilisation.replace('{prefix}', client.config.discord.prefix)}
+                    description: `**Name:**${command.name}
+                    **Category:**  ${command.category}
+                    **Aliase(s):** ${command.aliases.length < 1 ? 'None' : command.aliases.join(', ')}
+                    **Usage:**     ${command.utilisation.replace('{prefix}', client.config.discord.prefix)}
                     
                     
                     `,

@@ -12,11 +12,11 @@ module.exports = {
             color: 'RANDOM',
            
         
-            footer: { text: `Ping for  ${client.user.username}`,
+            footer: { text:`${client.user.username}`,
                       icon_url: client.user.displayAvatarURL(),
         },
             fields: [
-                { name: '💓|Mah Heart', value: `${client.ws.ping}ms` },
+                { name: '<a:kawaii:740968162912370789> Mah Heart', value: `${client.ws.ping}ms` },
             ],
             timestamp: new Date(),
             
