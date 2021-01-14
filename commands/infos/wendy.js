@@ -1,5 +1,5 @@
 
-const ms = require('ms')
+/*const ms = require('ms')
 
 var parseTime= function(millisesconds){
   var seconds = Math.floor(millisesconds / 1000);
@@ -23,7 +23,7 @@ var parseTime= function(millisesconds){
       (milliseconds ? millisesconds + `milliseconds`: ``)
   )
 };
-
+*/
 
 module.exports = {
     name: 'wendy/invite',
@@ -49,7 +49,7 @@ module.exports = {
                    {name:'`:-3`Guilds',value:client.guilds.cache.size},
                    {name:'`^.^`Current listeners',value:`${client.users.cache.size}`},
                    {name:'`$_$`Ping',value:`${client.ws.ping}ms`},
-                   {name:'`B-)`Uptime',value:parseTime(client.uptime)},
+                   {name:'`B-)`Uptime',value:(client.uptime)},
 
         ],
                 description:  `**Made </> with <3 by <@672695020100386846>**
