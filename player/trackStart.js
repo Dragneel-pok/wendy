@@ -37,15 +37,8 @@ module.exports = (client, message, track) => {
                 "inline":true
             }
         ],
-           /* description: `
-            Connected to: ${message.member.voice.channel.name}
-            YT-Channel:   ${track.author}
-            Requested by: ${track.requestedBy.username}
-            From playlist:${track.fromPlaylist ? 'Yes' : 'No'}      
-            Views:        ${track.views}| Duration:     ${track.duration}
-            Volume:       ${client.player.getQueue(message).volume }
-            Repeat mode:  ${client.player.getQueue(message).repeatMode ? 'Yes' : 'No' }
-            `  */
+           
+           description:`Track : [${track.title}](${track.url})`,
             
             thumbnail: { url: track.thumbnail },
             timestamp: new Date(),
