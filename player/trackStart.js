@@ -38,7 +38,7 @@ module.exports = (client, message, track) => {
             }
         ],
            
-           description:`Track : [${track.title}](${track.url})`,
+           description:`Track : ${track.url}`,
             
             thumbnail: { url: track.thumbnail },
             timestamp: new Date(),
