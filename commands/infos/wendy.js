@@ -1,3 +1,6 @@
+
+const ms = require('ms')
+
 var parseTime= function(millisesconds){
   var seconds = Math.floor(millisesconds / 1000);
   millisesconds%= 1000;
