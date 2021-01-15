@@ -42,7 +42,8 @@ let inline = true
                     icon_url:client.user.displayAvatarURL()
                 },
                 thumbnail:{url:'https://cdn.discordapp.com/attachments/726134541638697042/798506734540161024/tumblr_m0acjiwign1qm9b8do1_r1_500.gif'},
-                feild:[
+               
+                fields:[
                    {name:`\`O.O\`Prefix`,value:`${client.config.discord.prefix}`,inline},
                    {name:`\`>_<\`Version`,value:`${client.config.config.ver}`,inline},
                    {name:`\`;_;\`Library` ,value:'NodeJS & discord.js <12.5.1>',inline},
@@ -56,7 +57,7 @@ let inline = true
         **My Home|Support server :** [Home](https://discord.gg/7WNNNFaGJX)
         `,
                 footer:{ text: 'Keep smiling ,keep loving ',
-                icon_url:''
+             //   icon_url:''
 
         }
 
