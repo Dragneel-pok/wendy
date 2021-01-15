@@ -14,6 +14,14 @@ module.exports = {
         client.player.setRepeatMode(message, false);
         client.player.stop(message);
 
-        message.channel.send(`${client.emotes.success} - Music **stopped** into this server !`);
+        message.channel.send({
+            embed:{
+              color:'#29cddc',
+              description:'<a:caution:799597232310452234>  Music stopped | Its hard to see you go ... see yaaa next time ❤️ ! '
+              
+            }
+            
+            
+          });
     },
 };
