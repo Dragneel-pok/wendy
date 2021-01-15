@@ -32,7 +32,7 @@ module.exports = {
     utilisation: '{prefix}wendy| {prefix}invite',
 
     execute(client, message) {
-
+let inline = ttrue
         //const used = process.memoryUsage().heapUsed /1024/1024
         message.channel.send({
             embed:{
@@ -43,13 +43,13 @@ module.exports = {
                 },
                 thumbnail:{url:'https://cdn.discordapp.com/attachments/726134541638697042/798506734540161024/tumblr_m0acjiwign1qm9b8do1_r1_500.gif'},
                 feild:[
-                   {name:'\`O.O\`Prefix',value:`${client.config.discord.prefix}`},
-                   {name:'\`>_<\`Version',value:client.config.config.ver},
-                   {name:'\`;_;\`Library ',value:'NodeJS & discord.js <12.5.1>'},
-                   {name:'\`:-3\`Guilds',value:client.guilds.cache.size},
-                   {name:'\`^.^\`Current listeners',value:`${client.users.cache.size}`},
-                   {name:'\`$_$\`Ping',value:`${client.ws.ping}ms`},
-                   {name:'\`B-)\`Uptime',value:time(client.uptime)},
+                   {name:'\`O.O\`Prefix',value:`${client.config.discord.prefix}`,inline},
+                   {name:'\`>_<\`Version',value:client.config.config.ver,inline},
+                   {name:'\`;_;\`Library ',value:'NodeJS & discord.js <12.5.1>',inline},
+                   {name:'\`:-3\`Guilds',value:client.guilds.cache.size,inline},
+                   {name:'\`^.^\`Current listeners',value:`${client.users.cache.size}`,inline},
+                   {name:'\`$_$\`Ping',value:`${client.ws.ping}ms`,inline},
+                   {name:'\`B-)\`Uptime',value:time(client.uptime),inline},
 
         ],
                 description:  `**Made </> with <3 by <@672695020100386846>**
