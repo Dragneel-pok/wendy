@@ -12,7 +12,7 @@ module.exports = {
         sent.edit({
         embed: {
             color: 'RANDOM',
-           thuumbnail:client.user.displayAvatarURL(),
+           thuumbnail:{url:client.user.displayAvatarURL()},
             title:'!PONG',
             footer: { text:` Uptime = ${uptime}`,
                       icon_url: client.user.displayAvatarURL(),
