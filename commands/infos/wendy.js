@@ -38,7 +38,7 @@ let inline = true
             embed:{
                 color:"#29cddc",
                 author:{
-                    name:`About + ${client.user.username}`,
+                    name:`About ${client.user.username}`,
                     icon_url:client.user.displayAvatarURL()
                 },
                 thumbnail:{url:'https://cdn.discordapp.com/attachments/726134541638697042/798506734540161024/tumblr_m0acjiwign1qm9b8do1_r1_500.gif'},
