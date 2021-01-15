@@ -18,7 +18,7 @@ module.exports = {
                       icon_url: client.user.displayAvatarURL(),
         },
             fields: [
-                { name:`<a:kawaii:740968162912370789> Mah Heart`, value: `${Math.round(client.ws.ping)}ms`,inline = true },
+                { name:`<a:kawaii:740968162912370789> Mah Heart`, value: `${client.ws.ping}ms`,inline = true },
                 {name :`<a:latency:799454566021857291> Latency`, value :`${pingMessage.createdTimestamp - message.createdTimestamp}ms`,inline = true}
             ],
             timestamp: new Date(),
