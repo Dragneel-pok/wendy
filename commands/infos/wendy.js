@@ -53,10 +53,9 @@ let inline = true
                    {name:`\`B-)\`Uptime`,value:`${time(client.uptime)}`,inline},
 
         ],
-                description:  `**Made </> with <3 by <@672695020100386846>**
-        **My Home|Support server :** [Dragy's Home](https://discord.gg/7WNNNFaGJX)
-        `,
+                description:  `**Made </> with <3 by <@672695020100386846>**\n\n**My Home|Support server :** [Dragy's Home](https://discord.gg/7WNNNFaGJX)`,
                 footer:{ text: 'Keep smiling ,keep loving  ',
+                timestamp: new Date(),
              //   icon_url:''
 
         }

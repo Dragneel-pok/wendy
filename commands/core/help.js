@@ -26,9 +26,9 @@ module.exports = {
                  
                      description: ` konichiwaa/hello/Namaste me , am **Wendy** , a discord music bot by **Dragneel#1255**, am pretty descent with support of Youtube and spotify
                      looking forward to grow with everyone cause i am short xD
-                      **My**
-                      **Home:**  [Home/support](https://discord.gg/7WNNNFaGJX)
-                      **Invite-Link:** [Invite me](https://discord.com/oauth2/authorize?client_id=724135554966355968&permissions=0&scope=bot)
+                    **My**
+                    **Home:**  [Home/support](https://discord.gg/7WNNNFaGJX)
+                    **Invite-Link:** [Invite me](https://discord.com/oauth2/authorize?client_id=724135554966355968&permissions=0&scope=bot)
                      `,
                 },
             });
