@@ -45,7 +45,7 @@ let inline = true
                
                 fields:[
                    {name:`\`O.O\`Prefix`,value:`${client.config.discord.prefix}`,inline},
-                   {name:`\`>_<\`Version`,value:`${client.config.config.ver}`,inline},
+                   {name:`\`>_<\`Version`,value:`${client.config.stupida.ver}`,inline},
                    {name:`\`;_;\`Library` ,value:'NodeJS & discord.js <12.5.1>',inline},
                    {name:`\`:-3\`Guilds`,value:`${client.guilds.cache.size}`,inline},
                    {name:`\`^.^\`Current listeners`,value:`${client.users.cache.size}`,inline},
@@ -54,9 +54,9 @@ let inline = true
 
         ],
                 description:  `**Made </> with <3 by <@672695020100386846>**
-        **My Home|Support server :** [Home](https://discord.gg/7WNNNFaGJX)
+        **My Home|Support server :** [Dragy's Home](https://discord.gg/7WNNNFaGJX)
         `,
-                footer:{ text: 'Keep smiling ,keep loving ',
+                footer:{ text: 'Keep smiling ,keep loving  ',
              //   icon_url:''
 
         }

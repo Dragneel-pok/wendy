@@ -12,11 +12,10 @@ module.exports = {
         prefix: 'w!',
         activity: 'songs of zephy',
     },
-    config:{
-        version:{
-            ver:'1.00',
-            dev:'672695020100386846'
-        }
+    stupida:{
+        ver:'1.00',
+        dev:'672695020100386846'
+        
     }
 
 
