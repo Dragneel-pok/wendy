@@ -27,7 +27,7 @@ const time = require('ms')
 
 module.exports = {
     name: 'wendy/invite',
-    aliases: ['support','info',],
+    aliases: ['support','info','wendy'],
     category: 'Infos',
     utilisation: '{prefix}wendy| {prefix}invite',
 
