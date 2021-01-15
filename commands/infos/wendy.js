@@ -32,7 +32,7 @@ module.exports = {
     utilisation: '{prefix}wendy| {prefix}invite',
 
     execute(client, message) {
-let inline = ttrue
+let inline = true
         //const used = process.memoryUsage().heapUsed /1024/1024
         message.channel.send({
             embed:{
