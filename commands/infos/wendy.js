@@ -1,7 +1,7 @@
 
-/*const ms = require('ms')
+const time = require('ms')
 
-var parseTime= function(millisesconds){
+/*var parseTime= function(millisesconds){
   var seconds = Math.floor(millisesconds / 1000);
   millisesconds%= 1000;
   var minutes = Math.floor(seconds / 60);
@@ -43,13 +43,13 @@ module.exports = {
                 },
                 thumbnail:{url:'https://cdn.discordapp.com/attachments/726134541638697042/798506734540161024/tumblr_m0acjiwign1qm9b8do1_r1_500.gif'},
                 feild:[
-                   {name:'`O.O`Prefix',value:`${client.config.discord.prefix}`},
-                   {name:'`>_<`Version',value:client.config.config.ver},
-                   {name:'`;_;`Library ',value:'NodeJS & discord.js <12.5.1>'},
-                   {name:'`:-3`Guilds',value:client.guilds.cache.size},
-                   {name:'`^.^`Current listeners',value:`${client.users.cache.size}`},
-                   {name:'`$_$`Ping',value:`${client.ws.ping}ms`},
-                   {name:'`B-)`Uptime',value:(client.uptime)},
+                   {name:'\`O.O\`Prefix',value:`${client.config.discord.prefix}`},
+                   {name:'\`>_<\`Version',value:client.config.config.ver},
+                   {name:'\`;_;\`Library ',value:'NodeJS & discord.js <12.5.1>'},
+                   {name:'\`:-3\`Guilds',value:client.guilds.cache.size},
+                   {name:'\`^.^\`Current listeners',value:`${client.users.cache.size}`},
+                   {name:'\`$_$\`Ping',value:`${client.ws.ping}ms`},
+                   {name:'\`B-)\`Uptime',value:time(client.uptime)},
 
         ],
                 description:  `**Made </> with <3 by <@672695020100386846>**
