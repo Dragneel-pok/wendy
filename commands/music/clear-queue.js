@@ -1,3 +1,6 @@
+
+const sendError = require("../events/error.js")
+
 module.exports = {
     name: 'clear-queue',
     aliases: ['cq'],
@@ -15,6 +18,6 @@ module.exports = {
 
         client.player.clearQueue(message);
 
-        message.channel.send(`${client.emotes.success} - The queue has just been **removed** !`);
+        return sendError (`${client.emotes.success} - The queue has just been **removed** !`,message.channel);
     },
 };
