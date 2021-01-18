@@ -18,8 +18,8 @@ module.exports = {
                       icon_url: client.user.displayAvatarURL(),
         },
             fields: [
-                {name:'<a:kawaii:740968162912370789> Mah Heart', value: `${client.ws.ping}ms`,inline :true },
-                {name :`<a:latency:799454566021857291> Latency`, value :`${new Date() -  new Date(message.createdTimestamp)}ms`,inline : true},
+                {name:'<a:kawaii:800603315275563039> Mah Heart', value: `${client.ws.ping}ms`,inline :true },
+                {name :`<a:latency:800603282585157663> Latency`, value :`${new Date() -  new Date(message.createdTimestamp)}ms`,inline : true},
             ],
             timestamp: new Date(),
             

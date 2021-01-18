@@ -1,6 +1,6 @@
 
-const sendError = require("../core/error.js")
-
+const errorembed = require("../core/errorembeder.js")
+const corembed = require ('../core/correctembed.js')
 module.exports = {
     name: 'clear-queue',
     aliases: ['cq'],
@@ -8,16 +8,16 @@ module.exports = {
     utilisation: '{prefix}clear-queue',
 
     execute(client, message) {
-        if (!message.member.voice.channel) return message.channel.send(`${client.emotes.error} - You're not in a voice channel !`);
+        if (!message.member.voice.channel) return errorembed(`**<a:error:800605823985516550> Please join a voice channel where I have access <3**!`,message.channel);
 
-        if (message.guild.me.voice.channel && message.member.voice.channel.id !== message.guild.me.voice.channel.id) return message.channel.send(`${client.emotes.error} - You are not in the same voice channel !`);
+        if (message.guild.me.voice.channel && message.member.voice.channel.id !== message.guild.me.voice.channel.id) return errorembed(`**<a:error:800605823985516550> Be in the same VC i connect to !**`,message.channel);
 
-        if (!client.player.getQueue(message)) return message.channel.send(`${client.emotes.error} - No music currently playing !`);
+        if (!client.player.getQueue(message)) return errorembed(`**<a:error:800605823985516550> No music in my queue** !`,message.channel);
 
-        if (client.player.getQueue(message).tracks.length <= 1) return message.channel.send(`${client.emotes.error} - There is only one song in the queue.`);
+        if (client.player.getQueue(message).tracks.length <= 1) return embeder(`<a:error:800605823985516550> Only **1** song in queue.`,message.channel);
 
         client.player.clearQueue(message);
 
-        return sendError (`${client.emotes.success} - The queue has just been **removed** !`,message.channel);
+        return corembed (`<a:analogtick:800603289539313674> Wendy's Music queue is now **cleared** !`,message.channel);
     },
 };

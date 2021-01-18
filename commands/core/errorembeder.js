@@ -5,10 +5,10 @@ const { MessageEmbed } = require("discord.js")
  * @param {String} text - Message which is need to send
  * @param {TextChannel} channel - A Channel to send error
  */
-module.exports = async (text, channel) => {
+module.exports = async (text, channel,message) => {
     let embed = new MessageEmbed()
-    .setColor("2af58b")
+    .setColor("ee1616")//ee1616
     .setDescription(text)
-    .setFooter()
+    .setFooter(`${message.author.tag}`,message.author.displayAvatarURL())
     await channel.send(embed)
 }
