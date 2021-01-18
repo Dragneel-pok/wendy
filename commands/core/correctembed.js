@@ -9,6 +9,6 @@ module.exports = async (text, channel,message) => {
     let embed = new MessageEmbed()
     .setColor("2af58b")
     .setDescription(text)
-    .setFooter(`${message.author.tag}`,message.author.displayAvatarURL())
+    .setFooter(`test`)
     await channel.send(embed)
 }
