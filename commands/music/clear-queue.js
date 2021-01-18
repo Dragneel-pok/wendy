@@ -1,5 +1,5 @@
 
-const sendError = require("../events/error.js")
+const sendError = require("../core/error.js")
 
 module.exports = {
     name: 'clear-queue',
