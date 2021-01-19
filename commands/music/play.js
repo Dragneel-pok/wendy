@@ -1,6 +1,6 @@
 module.exports = {
     name: 'play',
-    aliases: ['p'],
+    aliases: ['p','pl'],
     category: 'Music',
     utilisation: '{prefix}play [name/URL]',
 

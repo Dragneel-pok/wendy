@@ -5,7 +5,7 @@ module.exports = {
     name: 'clear-queue',
     aliases: ['cq'],
     category: 'Music',
-    utilisation: '{prefix}clear-queue',
+    utilisation: '{prefix}clear-queue| {prefix}cq',
 
     execute(client, message) {
         if (!message.member.voice.channel) return errorembed(`**<a:error:800605823985516550> Please join a voice channel where I have access <3**!`,message.channel);

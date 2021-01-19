@@ -1,6 +1,6 @@
 module.exports = {
     name: 'shuffle',
-    aliases: ['sh'],
+    aliases: ['sf'],
     category: 'Music',
     utilisation: '{prefix}shuffle',
 

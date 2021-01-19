@@ -1,6 +1,6 @@
 module.exports = {
     name: 'resume',
-    aliases: [],
+    aliases: ['res','r'],
     category: 'Music',
     utilisation: '{prefix}resume',
 
