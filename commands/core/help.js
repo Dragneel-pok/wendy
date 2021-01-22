@@ -46,7 +46,7 @@ module.exports = {
                     footer: { text:" if u find any bugs or problem | report in our server `w!support` "},
                    
                     timestamp: new Date(),
-                    description: `**Name:**${command.name}
+                    description:`**Name:**${command.name}
                     **Category:**  ${command.category}
                     **Aliase(s):** ${command.aliases.length < 1 ? 'None' : command.aliases.join(', ')}
                     **Usage:**     ${command.utilisation.replace('{prefix}', client.config.discord.prefix)}
