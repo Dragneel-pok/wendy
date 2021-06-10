@@ -12,8 +12,7 @@ module.exports = {
 
         if (message.guild.me.voice.channel && message.member.voice.channel.id !== message.guild.me.voice.channel.id) return errorembed(`**${client.emotes.error} Be in the same \`VC\` i connect to !**`,message.channel);
 
-        if (!args[0]) return corembed(`**${client.emotes.error}  Please indicate  title of a song you want me to play
-         !**`,message.channel);
+        if (!args[0]) return corembed(`**${client.emotes.error}  Please indicate  title of a song you want me to play!**`,message.channel);
 
         client.player.play(message, args.join(" "), { firstResult: true });
     },
