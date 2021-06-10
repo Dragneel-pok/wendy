@@ -1,3 +1,7 @@
+const errorembed = require("../core/errorembeder.js")
+const corembed = require ('../core/correctembed.js')
+
+
 module.exports = {
     name: 'queue',
     aliases: ['q'],
@@ -5,14 +9,14 @@ module.exports = {
     utilisation: '{prefix}queue',
 
     execute(client, message) {
-        if (!message.member.voice.channel) return message.channel.send(`${client.emotes.error} - You're not in a voice channel !`);
+        if (!message.member.voice.channel) return errorembed(`**${client.emotes.error} Please join a voice channel where I have access <3**!`,message.channel);
 
-        if (message.guild.me.voice.channel && message.member.voice.channel.id !== message.guild.me.voice.channel.id) return message.channel.send(`${client.emotes.error} - You are not in the same voice channel !`);
+        if (message.guild.me.voice.channel && message.member.voice.channel.id !== message.guild.me.voice.channel.id) return errorembed(`**${client.emotes.error} Be in the same \`VC\` i connect to !**`,message.channel);
 
         const queue = client.player.getQueue(message);
         const track = client.player.nowPlaying(message);
         
-        if (!client.player.getQueue(message)) return message.channel.send(`${client.emotes.error} - No songs currently playing !`);
+        if (!client.player.getQueue(message)) return errorembed(`**${client.emotes.error} Nothing is playing on queue**`,message.channel);
 
         message.channel.send({
             embed: {
