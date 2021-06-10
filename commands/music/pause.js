@@ -37,21 +37,8 @@ module.exports = {
             }
         })
         
-        
-        
-        //(`${client.emotes.success}  **Song|** ${client.player.getQueue(message).playing.title} | is paused !`)
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    }))
+      
+    }));
 
 
 

@@ -15,6 +15,24 @@ module.exports = {
 
         client.player.resume(message);
 
-        message.channel.send(`${client.emotes.success} - Song ${client.player.getQueue(message).playing.title} resumed !`);
+        message.channel.send(`**Aye Sir!`).then((send => {
+
+        
+            send.edit({
+                embed:
+                {
+                    color:`#9bff00`,
+                    author:{
+                         name: `Song| ${client.player.getQueue(message).playing.title}`,
+                        },
+                        field:[
+                            {name:`Status`,value:`Resumed| **:^**`},
+                        ], 
+    
+                }
+            })
+            
+          
+        }));
     },
 };
