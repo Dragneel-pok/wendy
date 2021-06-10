@@ -1,7 +1,7 @@
 module.exports = {
     emojis: {
         off: ':x:',
-        error: ':warning:',
+        error: '<a:error:800605823985516550>',
         queue: ':bar_chart:',
         music: ':musical_note:',
         success: '<a:analogtick:725928974877720677>',
