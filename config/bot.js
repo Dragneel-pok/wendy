@@ -4,7 +4,7 @@ module.exports = {
         error: ':warning:',
         queue: ':bar_chart:',
         music: ':musical_note:',
-        success: ':white_check_mark:',
+        success: '<a:analogtick:725928974877720677>',
     },
 
     discord: {

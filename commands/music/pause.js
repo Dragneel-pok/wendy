@@ -15,6 +15,21 @@ module.exports = {
 
         client.player.pause(message);
 
-        message.channel.send(`${client.emotes.success} - Song ${client.player.getQueue(message).playing.title} paused !`);
+        message.channel.send(`Reeeeeeeeeee`).then((send => {
+
+        
+        send.edit(`${client.emotes.success} - Song| ${client.player.getQueue(message).playing.title} | is paused !`)}))
+
+
+
+
+
+
+
+
+
+
+
+
     },
 };

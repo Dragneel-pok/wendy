@@ -1,3 +1,8 @@
+
+const errorembed = require("../core/errorembeder.js")
+const corembed = require ('../core/correctembed.js')
+
+
 module.exports = {
     name: 'nowplaying',
     aliases: ['np'],
