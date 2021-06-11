@@ -31,7 +31,7 @@ module.exports = {
                      name: `Song| ${client.player.getQueue(message).playing.title}`,
                     },
                     fields:[
-                        {name:`Status`,value:`Paused| **:^**`},
+                        {name:`Status: `,value:`Paused| **:^**`},
                     ], 
 
             }
