@@ -20,7 +20,7 @@ module.exports = {
 
         client.player.pause(message);
 
-        message.channel.send(`Reeeeeeeeeee`).then((send => {
+        message.channel.send(`**Reeeeeeeeeee**`).then((send => {
 
         
         send.edit({
@@ -30,7 +30,7 @@ module.exports = {
                 author:{
                      name: `Song| ${client.player.getQueue(message).playing.title}`,
                     },
-                    field:[
+                    fields:[
                         {name:`Status`,value:`Paused| **:^**`},
                     ], 
 
