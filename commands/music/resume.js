@@ -15,7 +15,7 @@ module.exports = {
 
         const success = client.player.resume(message);
 
-         if (success) message.channel.send(`**Aye Sir!`).then((send => {
+         if (success) message.channel.send(`**Aye Sir!**`).then((send => {
 
         
             send.edit({
