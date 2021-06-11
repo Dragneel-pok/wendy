@@ -18,9 +18,9 @@ module.exports = {
 
         if (client.player.getQueue(message).paused) return corembed(`${client.emotes.error}  The music, it's already paused !`);
 
-        client.player.pause(message);
+        const success = client.player.pause(message);
 
-        message.channel.send(`**Reeeeeeeeeee**`).then((send => {
+         if (success) message.channel.send(`**Reeeeeeeeeee**`).then((send => {
 
         
         send.edit({
