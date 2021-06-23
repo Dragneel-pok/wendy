@@ -4,12 +4,16 @@ const discord = require('discord.js');
 const client = new discord.Client({ disableMentions: 'everyone' });
 
 const { Player } = require('discord-player');
+const { keepalive } = require("./keepalive");
 
 client.player = new Player(client);
 client.config = require('./config/bot');
 client.emotes = client.config.emojis;
 client.filters = client.config.filters;
 client.commands = new discord.Collection();
+
+
+const mySecret = process.env['TOKEN']
 
 fs.readdirSync('./commands').forEach(dirs => {
     const commands = fs.readdirSync(`./commands/${dirs}`).filter(files => files.endsWith('.js'));
@@ -36,4 +40,4 @@ for (const file of player) {
     client.player.on(file.split(".")[0], event.bind(null, client));
 };
 
-client.login(`${client.config.discord.token}`);
+client.login(mySecret);

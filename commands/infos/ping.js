@@ -5,14 +5,14 @@ module.exports = {
     category: 'Infos',
     utilisation: '{prefix}ping',
 
-    execute(client, message) {
+      execute  (client, message) {
       const uptime = time(client.uptime);
 
-      message.channel.send("Pingi pongi.....").then((sent) => {
+          message.channel.send("Pingi pongi.....").then((sent) => {
         sent.edit({
         embed: {
             color: 'RANDOM',
-           thuumbnail:{url:`${client.user.displayAvatarURL()}`},
+           thumbnail:{url:`${client.user.displayAvatarURL()}`},
             title:'!PONG',
             footer: { text:` Uptime = ${uptime}`,
                       icon_url: client.user.displayAvatarURL(),

@@ -8,7 +8,7 @@ module.exports = {
     },
 
     discord: {
-        token: 'NzI0MTM1NTU0OTY2MzU1OTY4.Xu7xyg.AQfQdUINPrUB3hKI060wfD-n3mI',
+        token: '',
         prefix: 'w!',
         activity: 'songs of zephy',
     },

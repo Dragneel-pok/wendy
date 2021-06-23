@@ -28,7 +28,7 @@ module.exports = {
                      looking forward to grow with everyone cause i am short xD
                     **My**
                     **Home:**  [Home/support](https://discord.gg/7WNNNFaGJX)
-                    **Invite-Link:** [Invite me](https://discord.com/oauth2/authorize?client_id=724135554966355968&permissions=0&scope=bot)
+                    **Invite-Link:** [Invite me](https://discord.com/oauth2/authorize?client_id=724135554966355968&permissions=0&scope=bot) | For now i cant be invited
                      `,
                 },
             });
