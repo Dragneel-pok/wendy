@@ -24,9 +24,11 @@ module.exports = {
         message.channel.send({
             embed: {
                 color: '#29cddc',
-                author: { name:`Current Track: `+ track.title },
-                footer:  { text: `${message.guild.name}`,
-                icon_url: message.guild.iconURL(),
+                author: { name:`Current Track: `+ track.title ,
+                icon_url:message.guild.iconURL(),
+                },
+                footer:  { text: `Views:-${track.views}`,
+                icon_url: 'https://cdn.discordapp.com/emojis/775531595620417536.gif?v=1',
             },
                 //icon_url: 'https://cdn.discordapp.com/attachments/726134541638697042/798504710986399774/5ffd7f68840f5034724533.gif',
             
