@@ -12,9 +12,9 @@ module.exports = {
         if (!client.player.getQueue(message)) return message.channel.send(`${client.emotes.error} - No music currently playing !`);
 
         client.player.setRepeatMode(message, false);
-        client.player.stop(message);
+        const success= client.player.stop(message);
 
-        message.channel.send({
+        if (success) message.channel.send({
             embed:{
               color:'#29cddc',
               description:'<a:caution:799597232310452234>  Music stopped | Its hard to see you go ... see yaaa next time ❤️ ! '
