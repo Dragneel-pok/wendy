@@ -13,7 +13,7 @@ client.filters = client.config.filters;
 client.commands = new discord.Collection();
 
 
-const mySecret = process.env['TOKEN']
+const mySecret = process.env.TOKEN
 
 fs.readdirSync('./commands').forEach(dirs => {
     const commands = fs.readdirSync(`./commands/${dirs}`).filter(files => files.endsWith('.js'));
